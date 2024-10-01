@@ -10,6 +10,8 @@ num_burgers = 0
 num_fries = 0
 burger_cost = 4.99
 fry_cost = 0.99
+sales_tax = .07
+
 
 print("Can I take your order?")
 
@@ -21,12 +23,15 @@ print("Okay, that's", num_fries, "fries")
 
 burger_total= num_burgers * burger_cost
 fry_total = num_fries * fry_cost
-meal_total = burger_total + fry_total
+meal_total = (burger_total + fry_total)
+sales_tax = sales_tax * meal_total
+total_ptax = sales_tax + meal_total
 print("-" * 20)
 print(num_burgers, "burger\t$", burger_total)
 print(num_fries, "fry\t\t$", fry_total)
 print("-" * 20)
-print("Total\t\t$", meal_total)
+print("Tax:$", sales_tax)
+print("Total\t\t$", sales_tax + meal_total)
 
 
 
