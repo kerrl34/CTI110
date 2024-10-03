@@ -28,8 +28,8 @@ sales_tax = sales_tax * meal_total
 total_ptax = sales_tax + meal_total
 print("-" * 20)
 print(num_burgers, "🍔 burger(s)\t$", format (burger_total,".2f"))
-print(num_fries, "🍟 fries\t\t$", format(fry_total, ".2f"))
+print(num_fries, "🍟 fries\t$", format(fry_total, ".2f"))
 print("-" * 20)
-print("Tax: $ ", format(sales_tax, ".2f"))
-print("Total\t\t$",format(sales_tax + meal_total, ".2f"))
+print("Tax:\t$", format(sales_tax, ".2f"))
+print("Total\t$",format(sales_tax + meal_total, ".2f"))
 
