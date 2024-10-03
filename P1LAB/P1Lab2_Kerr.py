@@ -15,7 +15,7 @@ sales_tax = .07
 
 print("Can I take your order?")
 
-num_burgers = int(input ("How many burgers? "))
+num_burgers = int(input ("How many burgers would you like? "))
 print("You ordered", num_burgers, "burgers")
 
 num_fries = int(input("How many fries? "))
@@ -27,11 +27,8 @@ meal_total = (burger_total + fry_total)
 sales_tax = sales_tax * meal_total
 total_ptax = sales_tax + meal_total
 print("-" * 20)
-print(num_burgers, "burger\t$", burger_total)
-print(num_fries, "fry\t\t$", fry_total)
+print(num_burgers, "🍔 burger(s)\t$", format (burger_total,".2f"))
+print(num_fries, "🍟 fries\t\t$", format(fry_total, ".2f"))
 print("-" * 20)
-print("Tax:$", sales_tax)
-print("Total\t\t$", sales_tax + meal_total)
-
-
-
+print("Tax: $ ", format(sales_tax, ".2f"))
+print("Total\t\t$",format(sales_tax + meal_total, ".2f"))
